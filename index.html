@@ -1,14 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" lang="scss" href="/src/styles.scss">
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" lang="scss" href="/src/styles.scss">
+  <title>Vite + TS</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav id="main-navbar">
+  </nav>
+
+  <!-- main page container -->
+  <section class="app-container">
+    <!-- main page title -->
+    <article class="home-title">
+      <h1>Home</h1>
+      <h2>SubHome</h2>
+    </article>
+    
+      <!-- typescript types -->
+      <section class="ts-types">
+        <h2>Typescript types</h2>
+        <h3 id="ts-types-dynamic-subtitle"></h3>
+      </section>
+  </section>
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

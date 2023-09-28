@@ -1,8 +1,63 @@
-html{
-    body{
+html {
+    // root font size
+    font-size: 10px;
+
+    root {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
         padding: 0;
         margin: 0;
 
         background: #caca;
+    }
+}
+
+// id : #
+// class : .
+// tag : textual
+
+// typo: error de escritura, error de dedo
+#main-navbar {
+    content: "";
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    // display: grid;
+
+    background: rgb(0, 0, 0);
+    // rem em
+}
+
+// headers
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+
+.app-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.ts-types {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 }
