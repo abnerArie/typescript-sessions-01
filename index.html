@@ -25,25 +25,85 @@
 
     <article class="form-wrapper">
       <h3>Humano</h3>
-      <form class="form-grid">
-        <!-- primera row del form -->
+      <!-- form -->
+      <form class="form-grid" id="form-humano">
+        <!-- nombres -->
         <div class="humano-form-row">
           <div class="hfr-control">
             <label for="nombres">Nombres</label>
-            <input type="text" name="nombres" placeholder="algo">
+            <input maxlength="30" minlength="2" type="text" name="nombres" placeholder="algo">
           </div>
           <div class="hfr-functions">
             <p><b>Nombre en mayusculas:</b></p>
           </div>
         </div>
+
+        <!-- apellidos -->
+        <div class="humano-form-row">
+          <div class="hfr-control">
+            <label for="apellidos">Apellidos</label>
+            <input maxlength="80" minlength="4" type="text" name="apellidos" placeholder="algo">
+          </div>
+          <!-- <div class="hfr-functions">
+            <p><b>Nombre en mayusculas:</b></p>
+          </div> -->
+        </div>
+
+        <!-- fecha nacimiento -->
+        <div class="humano-form-row">
+          <div class="hfr-control">
+            <label for="apellidos">Fecha de Nacimiento</label>
+            <input type="date" name="fechaNacimiento" placeholder="fechaNacimiento">
+          </div>
+          <!-- <div class="hfr-functions">
+            <p><b>Nombre en mayusculas:</b></p>
+          </div> -->
+        </div>
+
+        <!-- edad-->
+        <div class="humano-form-row">
+          <div class="hfr-control">
+            <label for="apellidos">Edad</label>
+            <input max="80" min="16" type="number" name="edad" placeholder="edad">
+          </div>
+          <!-- <div class="hfr-functions">
+            <p><b>Nombre en mayusculas:</b></p>
+          </div> -->
+        </div>
+
+        <div class="humano-form-row">
+          <div class="hfr-control">
+            <label for="altura">Altura</label>
+            <input max="230" min="60" type="number" name="altura" placeholder="altura en cm" id="fhAlturaInput">
+          </div>
+          <!-- <div class="hfr-functions">
+            <p><b>Nombre en mayusculas:</b></p>
+          </div> -->
+        </div>
+
+        <div class="humano-form-row">
+          <div class="hfr-control">
+            <h3 for="sexo">Sexo</h3>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="Sexo" id="masc" value="M">
+            <label for="fem">Femenino</label>
+            <input type="radio" name="Sexo" id="fem" value="F">
+            <label for="other">Otro</label>
+            <input type="radio" name="Sexo" id="other" value="O">
+          </div>
+          <!-- <div class="hfr-functions">
+            <p><b>Nombre en mayusculas:</b></p>
+          </div> -->
+        </div>
+
+        <div class="form-acrion">
+          <button type="submit">
+            Enviar
+          </button>
+        </div>
       </form>
     </article>
 
-    <!-- typescript types -->
-    <!-- <section class="ts-types">
-        <h2>Typescript types</h2>
-        <h3 id="ts-types-dynamic-subtitle"></h3>
-      </section> -->
   </section>
 
   <div id="app"></div>

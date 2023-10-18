@@ -5,8 +5,8 @@ export interface Human {
     edad: number
     altura: number
     sexo: Sexo
-    peso: number
-    colorOjos: ColorDeOjos
+    peso?: number
+    colorOjos?: ColorDeOjos
 }
 
 type Sexo = 'M' | 'F' | 'O'
