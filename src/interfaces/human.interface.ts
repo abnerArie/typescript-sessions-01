@@ -9,6 +9,8 @@ export interface Human {
     colorOjos?: ColorDeOjos
 }
 
+
+
 type Sexo = 'M' | 'F' | 'O'
 
 type ColorDeOjos = 'Cafés' | 'Verdes' | 'Azules' | 'Arcoiris'

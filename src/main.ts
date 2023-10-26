@@ -16,12 +16,14 @@ REF_FORM_HUMAN.addEventListener('submit', (event) => {
 
 const REF_ALTURA_INPUT = document.getElementById('fhAlturaInput') as HTMLInputElement
 
-REF_ALTURA_INPUT.addEventListener('change', (event) => {
+REF_ALTURA_INPUT.addEventListener('change', (event: any) => {
     const VALOR_MINIMO = 60
     const VALOR_MAXIMO = 230
     const REF_ERROR_MESSAGE = document.createElement('span')
 
-    if (event.target.value < VALOR_MINIMO || event.target.value > VALOR_MAXIMO) {
+    if (!(event?.target?.value) as any) return
+
+    if (event.target?.value < VALOR_MINIMO || event?.target.value > VALOR_MAXIMO) {
         event.target?.parentElement?.appendChild(REF_ERROR_MESSAGE)
         REF_ERROR_MESSAGE.innerText = `El valor debe ser mayor a ${VALOR_MINIMO} y menor a ${VALOR_MAXIMO}`
         event.target.classList.add('form-input-error')
